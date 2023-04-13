@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: hsl(233, 26%, 24%);
+    padding-bottom: 40px;
+}
+#logo{
+    color: white;
+}
+.footer-left{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    padding-left: 15%;
+
+}
+.footer-right{
+    width: 30%;
+    padding-top: 40px;
+}
+.facebook, .youtube, .twitter, .pinterest, .instagram{
+    color: white;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.facebook:hover{
+    color: limegreen;
+    transition: 0.9s;
+}
+.youtube:hover{
+    color: limegreen;
+    transition: 0.9s;
+}
+.twitter:hover{
+    color: limegreen;
+    transition: 0.9s;
+}
+.pinterest:hover{
+    color: limegreen;
+    transition: 0.9s;
+}
+.instagram:hover{
+    background-color: limegreen;
+    transition: 0.9s;
+}
+.foot-left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 4%;
+    padding-left: 5%;
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.foot-center{
+    padding-top: 5%;
+    padding-left: 5%;
+
+}
+.foot-right{
+    padding-top: 5%;
+}
+.center{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.center li{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    /* font-size: 11px; */
+}
+.center a li:hover{
+    color: limegreen;
+    transition: 0.9s;
+}
+#sent{
+    text-decoration: none;
+    background-image: linear-gradient(to left, cyan , limegreen);
+    padding: 10px 25px;
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+}
+#sent:hover{
+    background-image: linear-gradient(to left, rgb(102, 255, 255) , rgb(69, 250, 69));
+    transition: 0.9s;
+}
+.copy{
+    padding-top: 20px;
+    color: white;
+}
+@media screen and (max-width:900px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer-left{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0%;
+    
+    }
+    .easybank{
+        width: 200px;
+        height: 40px;
+    }
+    .foot-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot-center{
+        padding-top: 2%;
+        padding-left: 0%;
+    
+    }
+    .footer-right{
+        width: 100%;
+        align-items: center;
+        padding-left: 120px;
+    }
+    .copy{
+        width: 100%;
+        font-size: 13px;
+        padding-top: 40px;
+        color: hsl(233, 8%, 62%);
+    }
+    #sent{
+    width: 100%;
+    }
+    .center li{
+        color: hsl(233, 8%, 62%);
+    }
+    .social{
+        gap: 10px;
+    }
+}

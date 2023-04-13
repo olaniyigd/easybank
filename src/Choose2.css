@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.choosen{
+    width: 100%;
+    background-color:hsl(220, 16%, 96%);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 250px;
+    padding-bottom: 100px;
+}
+.choosen-title{
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+}
+.choosen-text{
+    width: 64%;
+    color: hsl(233, 8%, 62%);
+}
+@media screen and (max-width:900px){
+    .choosen{
+        flex-direction: column;
+        text-align: center;
+        padding:0px 50px;
+    }
+    .choosen-title{
+        font-size: 20px;
+        padding: 10px 0px 10px 0px;
+    }
+    .choosen-text{
+        width: 100%;
+        font-size: 14px;
+        color: hsl(233, 8%, 62%);
+    }
+    figure{
+        padding: 10px 0px;
+    }
+}

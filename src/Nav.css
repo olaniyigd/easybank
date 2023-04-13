@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.desktop-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px ;
+    z-index: 1000;
+    background-color: white;
+    position: absolute;
+}
+.desktop-ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.desktop-ul li{
+    color: hsl(233, 8%, 62%);
+    cursor: pointer;
+}
+.desktop-ul li:hover{
+    border-bottom: 4px solid limegreen;
+    transition: 0.9s;
+}
+#req{
+    text-decoration: none;
+    background-image: linear-gradient(to left, cyan , limegreen);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 20px;
+}
+#req:hover{
+    background-image: linear-gradient(to left, rgb(102, 255, 255) , rgb(69, 250, 69));
+    transition: 0.9s;
+}
+.mobile-ul{
+    display: none;
+    position: absolute;
+    top: 130%;
+    list-style-type: none;
+    width: 0%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0px;
+    z-index: 1000;
+    animation: gone .9s linear 1;
+}
+@keyframes gone {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.mobile-ul li{
+    margin-top: 20px;
+    cursor: pointer;
+    color: hsl(233, 8%, 62%);
+}
+.mobile-ul li:hover{
+    color: limegreen;
+}
+#toggle{
+    padding: 5px 15px;
+    background-image: linear-gradient(to left, cyan , limegreen);
+    cursor: pointer;
+    border: 2px solid limegreen;
+    border-radius: 5px;
+    margin-left: 45%;
+    display: none;
+}
+#toggle:hover{
+    background-image: linear-gradient(to left, rgb(102, 255, 255) , rgb(69, 250, 69));
+    transition: 0.9s;
+}
+@media screen and (max-width:900px){
+    .desktop-ul{
+        display: none;
+    }
+    .desktop-top{
+        width: 100%;
+    }
+    #req{
+        display: none;
+    }
+    #toggle{
+        display: block;
+    }
+    .mobile-ul{
+        display: block;
+        width: 95%;
+        animation: move .9s linear 1;
+    }
+    @keyframes move {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+}

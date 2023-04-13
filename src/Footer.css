@@ -63,15 +63,18 @@
 .foot-center{
     padding-top: 5%;
     padding-left: 5%;
+    text-decoration: none;
 
 }
 .foot-right{
     padding-top: 5%;
+    text-decoration: none;
 }
 .center{
     width: 100%;
     list-style-type: none;
     display: flex;
+    text-decoration: none;
     flex-direction: column;
     gap: 20px;
 }
@@ -79,7 +82,6 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
-    /* font-size: 11px; */
 }
 .center a li:hover{
     color: limegreen;

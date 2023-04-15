@@ -38,7 +38,7 @@ export default function Footer () {
             </div>
             <div className="footer-right">
                 <a id="sent" href=".">Request Invite</a>
-                <p className="copy">&copy; Easybank. All Rights Reserved</p>
+                <p className="copy">&copy; Easybank. All Rights Reserved. Developed by Dakieodev</p>
             </div>
 
         </div>
